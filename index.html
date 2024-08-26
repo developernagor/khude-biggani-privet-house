@@ -4,60 +4,287 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ক্ষুদে বিজ্ঞানী প্রাইভেট হাউস</title>
+
+    <!-- External css file link here -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts link here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome link here -->
+    <script src="https://kit.fontawesome.com/c0cf789da4.js" crossorigin="anonymous"></script>
+
 </head>
 
-
-
-
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#" class="logo">KBPH</a>
-            <ul class="nav-menu">
-                <li><a href="#">হোম</a></li>
-                <li><a href="#">আমাদের সম্পর্কে</a></li>
-                <li class="dropdown">
-                    <a href="#">কোর্সসমূহ <i class="arrow down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">ভর্তি তথ্য</a></li>
-                        <li><a href="#">অনলাইন ভর্তি ফরম</a></li>
-                        <li><a href="#">ভিডিও লেকচার</a></li>
-                    </ul>
-                </li>
+    <!-- Header section starts here -->
+    <header>
+        <!-- Navbar section starts here -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="#" class="logo">KBPH</a>
+                <ul class="nav-menu">
+                    <li><a href="#">হোম</a></li>
+                    <li><a href="#">আমাদের সম্পর্কে</a></li>
+                    <li class="dropdown">
+                        <a href="#">কোর্সসমূহ <i class="arrow down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ভর্তি তথ্য</a></li>
+                            <li><a href="#">অনলাইন ভর্তি ফরম</a></li>
+                            <li><a href="#">ভিডিও লেকচার</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#"> পরীক্ষা ও ফলাফল <i class="arrow down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">সাপ্তাহিক পরীক্ষা</a></li>
+                            <li><a href="#">মডেল টেস্ট</a></li>
+                            <li><a href="#">চূড়ান্ত পরীক্ষা</a></li>
+                            <li><a href="#">ফলাফল</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">ডাউনলোড<i class="arrow down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">পাঠ্যবই</a></li>
+                            <li><a href="#">প্রশ্নব্যাংক</a></li>
+                            <li><a href="#">হ্যান্ডনোট</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">গ্যালারী</a></li>
+                    <li><a href="#">ব্লগ</a></li>
+                    <li><a href="#">যোগাযোগ</a></li>
+                </ul>
+                <div class="login-container">
+                    <button class="login-button">লগইন</button>
+                </div>
                 
-                <li class="dropdown">
-                    <a href="#"> পরীক্ষা ও ফলাফল <i class="arrow down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">সাপ্তাহিক পরীক্ষা</a></li>
-                        <li><a href="#">মডেল টেস্ট</a></li>
-                        <li><a href="#">চূড়ান্ত পরীক্ষা</a></li>
-                        <li><a href="#">ফলাফল</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">ডাউনলোড<i class="arrow down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">পাঠ্যবই</a></li>
-                        <li><a href="#">প্রশ্নব্যাংক</a></li>
-                        <li><a href="#">হ্যান্ডনোট</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">গ্যালারী</a></li>
-                <li><a href="#">ব্লগ</a></li>
-                <li><a href="#">যোগাযোগ</a></li>
-            </ul>
-            <div class="login-container">
-                <button class="login-button">লগইন</button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
+        </nav>
+        <!-- Navbar section ends here -->
+
+        <!-- Banner section starts here -->
+        <section class="banner">
+        
+            <div class="banner-text">
+                <h1>ক্ষুদে বিজ্ঞানী প্রাইভেট হাউস</h1>
+                <p>“জ্ঞানই শক্তি, বিজ্ঞানই ভবিষ্যৎ”</p>
+                <p>"ছোটদের মধ্যে বিজ্ঞানমনস্কতা গড়ে তোলা, তাদের দক্ষতা ও চিন্তাশক্তি উন্নত করে সৃজনশীল ও দায়িত্বশীল নাগরিক হিসেবে গড়ে তোলা আমাদের একান্ত লক্ষ্য।"</p>
+
+                <a href="#" class="btn">আরও জানুন</a>
+            </div>
+            <div class="banner-image">
+                <img src="./images/20220301_111959.jpg" alt="Institution Image">
+            </div>
+        
+    </section>
+    <!-- Banner section ends here -->
+    </header>
+    <!-- Header section ends here -->
+
+
+    <!-- Main section starts here -->
+     <main>
+        <!-- Notice section starts here -->
+        <section class="notice">
+            <div class="notice-heading">
+                <h2>নোটিশ বোর্ড</h2>
+            </div>
+                <div class="notice-items">
+                    <div class="notice-item">
+                        <ul class="notice-list">
+                            <li><a href="#">নোটিশ ১: কোচিং সেন্টারের নতুন ক্লাসের সময়সূচী প্রকাশিত হয়েছে।</a></li>
+                            <li><a href="#">নোটিশ ২: বিজ্ঞান মেলার জন্য ছাত্র-ছাত্রীদের নাম নিবন্ধন চলছে।</a></li>
+                            <li><a href="#">নোটিশ ৩: আগামী শুক্রবারের ক্লাস বাতিল করা হয়েছে।</a></li>
+                            <li><a href="#">নোটিশ ৪: মাসিক পরীক্ষার ফলাফল প্রকাশিত হয়েছে।</a></li>
+                        </ul>
+                    </div>
+                    <div class="notice-item">
+                        <ul class="notice-list">
+                            <li><a href="#">নোটিশ ১: কোচিং সেন্টারের নতুন ক্লাসের সময়সূচী প্রকাশিত হয়েছে।</a></li>
+                            <li><a href="#">নোটিশ ২: বিজ্ঞান মেলার জন্য ছাত্র-ছাত্রীদের নাম নিবন্ধন চলছে।</a></li>
+                            <li><a href="#">নোটিশ ৩: আগামী শুক্রবারের ক্লাস বাতিল করা হয়েছে।</a></li>
+                            <li><a href="#">নোটিশ ৪: মাসিক পরীক্ষার ফলাফল প্রকাশিত হয়েছে।</a></li>
+                        </ul>
+                    </div>
+                    <div class="notice-item">
+                        <ul class="notice-list">
+                            <li><a href="#">নোটিশ ১: কোচিং সেন্টারের নতুন ক্লাসের সময়সূচী প্রকাশিত হয়েছে।</a></li>
+                            <li><a href="#">নোটিশ ২: বিজ্ঞান মেলার জন্য ছাত্র-ছাত্রীদের নাম নিবন্ধন চলছে।</a></li>
+                            <li><a href="#">নোটিশ ৩: আগামী শুক্রবারের ক্লাস বাতিল করা হয়েছে।</a></li>
+                            <li><a href="#">নোটিশ ৪: মাসিক পরীক্ষার ফলাফল প্রকাশিত হয়েছে।</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-section">
+                    <div class="row">
+                        <div class="card">
+                            <h3>ফলের গুরুত্ব</h3>
+                            <p>ফল খাওয়া স্বাস্থ্যের জন্য অত্যন্ত উপকারী। এটি ভিটামিন এবং মিনারেলে ভরপুর।</p>
+                        </div>
+                        <div class="card">
+                            <h3>ইভেন্টস</h3>
+                            <ul>
+                                <li>বিজ্ঞান মেলা - ১লা সেপ্টেম্বর</li>
+                                <li>বিতর্ক প্রতিযোগিতা - ১০ই সেপ্টেম্বর</li>
+                                <li>বার্ষিক ক্রীড়া অনুষ্ঠান - ২০শে সেপ্টেম্বর</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>আবহাওয়া</h3>
+                            <p>আজকের আবহাওয়া - মেঘলা, সম্ভাব্য বৃষ্টি। তাপমাত্রা: ২৫°C</p>
+                        </div>
+                        <div class="card">
+                            <h3>অভিনন্দন!</h3>
+                            <p>মাহিরাকে ক্লাস ৮ এর বিজ্ঞান পরীক্ষায় সর্বোচ্চ নম্বর অর্জনের জন্য অভিনন্দন!</p>
+                        </div>
+                        <div class="card">
+                            <h3>প্রশ্ন</h3>
+                            <p>বাংলাদেশের রাজধানী কোনটি?</p>
+                            <ul>
+                                <li>(ক) চট্টগ্রাম</li>
+                                <li>(খ) খুলনা</li>
+                                <li>(গ) সিলেট</li>
+                                <li>(ঘ) ঢাকা</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>জন্মদিন</h3>
+                            <ul>
+                                <li>সোহান - ২রা সেপ্টেম্বর</li>
+                                <li>মাহিরা - ৫ই সেপ্টেম্বর</li>
+                                <li>ফারহান - ১০ই সেপ্টেম্বর</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Add additional cards in the same format if needed -->
+                    </div>
+                </div>
+                
+                
             
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+        </section>
+        <!-- Notice section ends here -->
+
+
+        <!-- Admission fees and Tution Fees section starts here -->
+        <section class="fees-section">
+            
+                <h2>ভর্তি ফি ও টিউশন ফি</h2>
+
+                <div class="fees-table">
+                    <h3>ভর্তি ফি</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ক্লাস</th>
+                                <th>ভর্তি ফি</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>১ম শ্রেণী</td>
+                                <td>৳ ৫,০০০</td>
+                            </tr>
+                            <tr>
+                                <td>২য় শ্রেণী</td>
+                                <td>৳ ৫,৫০০</td>
+                            </tr>
+                            <tr>
+                                <td>৩য় শ্রেণী</td>
+                                <td>৳ ৬,০০০</td>
+                            </tr>
+                            <!-- আরও ক্লাস যোগ করতে পারেন -->
+                        </tbody>
+                    </table>
+                </div>
+        
+                <div class="fees-table">
+                    <h3>টিউশন ফি</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ক্লাস</th>
+                                <th>মাসিক টিউশন ফি</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>১ম শ্রেণী</td>
+                                <td>৳ ২,০০০</td>
+                            </tr>
+                            <tr>
+                                <td>২য় শ্রেণী</td>
+                                <td>৳ ২,৫০০</td>
+                            </tr>
+                            <tr>
+                                <td>৩য় শ্রেণী</td>
+                                <td>৳ ৩,০০০</td>
+                            </tr>
+                            <!-- আরও ক্লাস যোগ করতে পারেন -->
+                        </tbody>
+                    </table>
+                </div>
+            
+        </section>
+        <!-- Admission fees and Tution Fees section ends here -->
+
+
+
+     </main>
+    <!-- Main section ends here -->
+
+
+    <!-- Footer section starts here -->
+    <footer class="footer">
+        
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1>KBPH</h1>
+                </div>
+                <div class="footer-links">
+                    <h3>মেনু</h3>
+                    <ul>
+                        <li><a href="#">হোম</a></li>
+                        <li><a href="#">আমাদের সম্পর্কে</a></li>
+                        <li><a href="#">কোর্স</a></li>
+                        <li><a href="#">ভর্তি</a></li>
+                        <li><a href="#">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>যোগাযোগ</h3>
+                    <p>ঠিকানা: পাবনা সদর, পাবনা, বাংলাদেশ</p>
+                    <p>ফোন: ০১৫৭৫৪৩৯৫৯১</p>
+                    <p>ইমেইল: khudebigganiprivethouse@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>সামাজিক মিডিয়া</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=61559101464194" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+            <div class="footer-bottom">
+                <p>&copy; ২০২৪ ক্ষুদে বিজ্ঞানী প্রাইভেট হাউস। সকল অধিকার সংরক্ষিত।</p>
+            </div>
+        
+    </footer>
+    <!-- Footer section ends here -->
+    
 
     <script>
         const mobileMenu = document.getElementById('mobile-menu');
