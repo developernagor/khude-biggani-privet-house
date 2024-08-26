@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ক্ষুদে বিজ্ঞানী প্রাইভেট হাউস</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">KBPH</a>
+            <ul class="nav-menu">
+                <li><a href="#">হোম</a></li>
+                <li><a href="#">আমাদের সম্পর্কে</a></li>
+                <li class="dropdown">
+                    <a href="#">কোর্সসমূহ <i class="arrow down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">ভর্তি তথ্য</a></li>
+                        <li><a href="#">অনলাইন ভর্তি ফরম</a></li>
+                        <li><a href="#">ভিডিও লেকচার</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#"> পরীক্ষা ও ফলাফল <i class="arrow down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">সাপ্তাহিক পরীক্ষা</a></li>
+                        <li><a href="#">মডেল টেস্ট</a></li>
+                        <li><a href="#">চূড়ান্ত পরীক্ষা</a></li>
+                        <li><a href="#">ফলাফল</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">ডাউনলোড<i class="arrow down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">পাঠ্যবই</a></li>
+                        <li><a href="#">প্রশ্নব্যাংক</a></li>
+                        <li><a href="#">হ্যান্ডনোট</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">গ্যালারী</a></li>
+                <li><a href="#">ব্লগ</a></li>
+                <li><a href="#">যোগাযোগ</a></li>
+            </ul>
+            <div class="login-container">
+                <button class="login-button">লগইন</button>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>
+
+        

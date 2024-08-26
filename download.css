@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Download Section styles */
+.download-section {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.download-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.download-section h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.download-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.download-table thead th {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.download-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.download-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.download-table tbody td a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.download-table tbody td a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .download-section h2 {
+        font-size: 24px;
+    }
+
+    .download-table thead th,
+    .download-table tbody td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+

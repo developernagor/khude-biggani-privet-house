@@ -1,0 +1,39 @@
+[
+    {
+        "grade": "1",
+        "students": [
+            {
+                "name": "মোহাম্মদ আলী",
+                "father": "আলী আহমেদ",
+                "mother": "জোহরা বেগম",
+                "photo": "student1.jpg",
+                "dob": "১৫ জানুয়ারি ২০১৭",
+                "age": "৭",
+                "features": "অঙ্কে দক্ষ, স্পোর্টস-এ আগ্রহী",
+                "achievements": "স্কুলের অঙ্ক প্রতিযোগিতায় প্রথম পুরস্কার",
+                "favorite": "গণিত ও ফুটবল",
+                "contact": "মোহাম্মদ আলীর যোগাযোগের তথ্য"
+            }
+            // Add more students as needed
+        ]
+    },
+    {
+        "grade": "2",
+        "students": [
+            {
+                "name": "রাহুল মন্ডল",
+                "father": "মহাম্মদ মন্ডল",
+                "mother": "ফারহানা বেগম",
+                "photo": "student2.jpg",
+                "dob": "২০ ফেব্রুয়ারি ২০১৬",
+                "age": "৮",
+                "features": "অঙ্কে ভালো",
+                "achievements": "বিভিন্ন স্কুল প্রতিযোগিতায় অংশগ্রহণ",
+                "favorite": "অঙ্ক ও ক্রিকেট",
+                "contact": "রাহুল মন্ডলের যোগাযোগের তথ্য"
+            }
+            // Add more students as needed
+        ]
+    }
+    // Add more grades and students as needed
+]

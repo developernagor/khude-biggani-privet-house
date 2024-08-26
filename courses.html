@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কোর্সসমূহ</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+
+    <!-- Admission Info -->
+     
+    <section class="admission-info">
+        <h1>ভর্তি তথ্য</h1>
+
+        <div class="section">
+            <h2>ভর্তির নিয়মাবলি</h2>
+            <p>ভর্তির জন্য প্রয়োজনীয় শর্তাবলী এবং প্রয়োজনীয় কাগজপত্রের তালিকা। বয়সসীমা এবং প্রাসঙ্গিক অন্যান্য তথ্য।</p>
+        </div>
+
+        <div class="section">
+            <h2>ভর্তি ফর্ম</h2>
+            <p>ভর্তি ফর্ম পূরণের নির্দেশাবলী এবং ডাউনলোডের জন্য <a href="#">ফর্ম ডাউনলোড করুন</a>।</p>
+        </div>
+
+        <div class="section">
+            <h2>ভর্তির সময়সূচী</h2>
+            <ul>
+                <li>ভর্তি শুরু: ১লা জানুয়ারি</li>
+                <li>ভর্তি শেষ: ৩১শে জানুয়ারি</li>
+                <li>ভর্তি পরীক্ষা: ১০ই ফেব্রুয়ারি</li>
+                <li>ফলাফল প্রকাশ: ১৫ই ফেব্রুয়ারি</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- Admission Form -->
+  
+        <section class="admission-form">
+            <h1>ভর্তি ফর্ম</h1>
+            <form action="/submit-form" method="post">
+                <div class="form-group">
+                    <label for="name">নাম:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="father-name">পিতার নাম:</label>
+                    <input type="text" id="father-name" name="father-name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="mother-name">মাতার নাম:</label>
+                    <input type="text" id="mother-name" name="mother-name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="birthdate">জন্ম তারিখ:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="grade">শ্রেণি:</label>
+                    <select id="grade" name="grade" required>
+                        <option value="1">১ম শ্রেণি</option>
+                        <option value="2">২য় শ্রেণি</option>
+                        <option value="3">৩য় শ্রেণি</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="address">ঠিকানা:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">ফোন নম্বর:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">ইমেইল:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+    
+                <button type="submit" class="submit-btn">ফর্ম জমা দিন</button>
+            </form>
+        </section>
+    
+    
+
+
+<!-- Exam Shedule -->
+ 
+<section class="exam-schedule">
+    <h1>আগামী ১ মাসের পরীক্ষার তালিকা</h1>
+
+    <!-- ৫ম শ্রেণির পরীক্ষার তালিকা -->
+    <div class="class-exam">
+        <h2>৫ম শ্রেণি</h2>
+
+        <div class="exam">
+            <h3>বাংলা</h3>
+            <p><strong>পরীক্ষার তারিখ:</strong> ১লা সেপ্টেম্বর, ২০২৪</p>
+            <p><strong>সিলেবাস:</strong> ১ম থেকে ৫ম অধ্যায়</p>
+            <p><strong>পরীক্ষার সময়:</strong> সকাল ৯টা থেকে ১২টা</p>
+        </div>
+
+        <div class="exam">
+            <h3>গণিত</h3>
+            <p><strong>পরীক্ষার তারিখ:</strong> ৫ই সেপ্টেম্বর, ২০২৪</p>
+            <p><strong>সিলেবাস:</strong> ১ম থেকে ৭ম অধ্যায়</p>
+            <p><strong>পরীক্ষার সময়:</strong> সকাল ৯টা থেকে ১২টা</p>
+        </div>
+    </div>
+
+    <!-- ৮ম শ্রেণির পরীক্ষার তালিকা -->
+    <div class="class-exam">
+        <h2>৮ম শ্রেণি</h2>
+
+        <div class="exam">
+            <h3>বিজ্ঞান</h3>
+            <p><strong>পরীক্ষার তারিখ:</strong> ১০ই সেপ্টেম্বর, ২০২৪</p>
+            <p><strong>সিলেবাস:</strong> ১ম থেকে ৪র্থ অধ্যায়</p>
+            <p><strong>পরীক্ষার সময়:</strong> সকাল ৯টা থেকে ১২টা</p>
+        </div>
+
+        <div class="exam">
+            <h3>ইংরেজি</h3>
+            <p><strong>পরীক্ষার তারিখ:</strong> ১৫ই সেপ্টেম্বর, ২০২৪</p>
+            <p><strong>সিলেবাস:</strong> ১ম থেকে ৬ষ্ঠ অধ্যায়</p>
+            <p><strong>পরীক্ষার সময়:</strong> সকাল ৯টা থেকে ১২টা</p>
+        </div>
+    </div>
+
+    <!-- আরও শ্রেণি এবং পরীক্ষার তালিকা এখানে যোগ করুন -->
+</section>
+
+
+    
+
+<!-- Video Lecture -->
+
+    <section class="video-lectures">
+        <h1>ভিডিও লেকচার</h1>
+
+        <div class="video-container">
+            <div class="video-card">
+                <h2>বাংলা ব্যাকরণ - ১ম অধ্যায়</h2>
+                <p>এই ভিডিওটিতে আমরা বাংলা ব্যাকরণের ১ম অধ্যায় আলোচনা করব।</p>
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-card">
+                <h2>গণিত - জ্যামিতি পরিচিতি</h2>
+                <p>এই ভিডিওটিতে আমরা জ্যামিতির মূল ধারণা নিয়ে আলোচনা করব।</p>
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-card">
+                <h2>বিজ্ঞান - সেলের গঠন</h2>
+                <p>এই ভিডিওটিতে আমরা জীববিজ্ঞানের সেলের গঠন নিয়ে আলোচনা করব।</p>
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <!-- আরও ভিডিও কার্ড এখানে যোগ করুন -->
+        </div>
+    </section>
+
+
+    
+
+
+
+
+
+    
+</body>
+</html>

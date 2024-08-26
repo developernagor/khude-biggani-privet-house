@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header section styles */
+
+header {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Banner Section Styles */
+.banner {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.banner-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.banner-text h1 {
+    font-size: 36px;
+    color: #3f51b5;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #3f51b5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ffeb3b;
+    color: #3f51b5;
+}
+
+.banner-image {
+    flex: 1;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Notice section styles */
+
+.notice-section {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.notice-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.notice-section h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.notice-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notice-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+    padding-left: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.notice-list li a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.notice-list li a:hover {
+    color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notice-date {
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .notice-section h2 {
+        font-size: 24px;
+    }
+
+    .notice-list li {
+        font-size: 16px;
+    }
+
+    .notice-list li a {
+        padding: 8px;
+    }
+
+    .notice-date {
+        font-size: 12px;
+    }
+}
+
+
+
+/* Teacher List and Teacher Profile */
+.teacher-section {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.teacher-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.teacher-section h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.teacher-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.teacher-table thead th {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.teacher-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.teacher-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.teacher-table tbody td a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.teacher-table tbody td a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .teacher-section h2 {
+        font-size: 24px;
+    }
+
+    .teacher-table thead th,
+    .teacher-table tbody td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+.profile-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h2 {
+    text-align: center;
+    color: #343a40;
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.profile-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+
+/* Admission fees and tution fees styles */
+.fees-section {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.fees-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.fees-section h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.fees-table {
+    margin-bottom: 30px;
+}
+
+.fees-table h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.fees-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.fees-table thead th {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.fees-table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.fees-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    .fees-section h2 {
+        font-size: 24px;
+    }
+
+    .fees-table h3 {
+        font-size: 20px;
+    }
+
+    .fees-table thead th,
+    .fees-table tbody td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+
+
+/* Footer Section styles  */
+.footer {
+    background-color: #0d47a1;
+    color: #ffffff;
+    padding: 40px 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #ffeb3b;
+}
+
+.social-icon {
+    font-size: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #3f51b5;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo h1 {
+        font-size: 20px;
+    }
+
+    .footer-links h3,
+    .footer-contact h3,
+    .footer-social h3 {
+        font-size: 18px;
+    }
+
+    .footer-links ul,
+    .footer-social ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links ul li,
+    .footer-social ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+}
+
