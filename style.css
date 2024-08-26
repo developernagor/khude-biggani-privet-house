@@ -168,6 +168,10 @@ header{
     text-align: center;
     
 }
+.login-container a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .login-button {
     background-color: #28a745;/* Button background color */
@@ -180,13 +184,18 @@ header{
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
+
 
 .login-button:hover {
     background-color: #ffffff; 
     color: #007bff; /* Darker background color on hover */
     transform: translateY(-2px);
     font-weight: 700; /* Slightly raise the button on hover */
+}
+.login-button:hover > a{
+    color: #007bff;
 }
 
 .login-button:active {
@@ -379,6 +388,51 @@ header{
 
 
 /* Notice section styles ends here */
+
+
+/* Counter section styles start here */
+.counter-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.counter {
+    text-align: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #ffffff;
+}
+
+.counter:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.counter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.counter .count {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Counter section styles end here */
 
 
 

@@ -1,0 +1,64 @@
+
+/* Registration css */
+.registration-section {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.registration-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #34495e;
+}
+
+.registration-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.submit-btn {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #2980b9;
+}
+
+
+
+
+
