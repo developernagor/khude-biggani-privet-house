@@ -60,5 +60,20 @@
 
 
 
+.extra-options{
+    background-color: #3a2ed9fd;
+    border-radius: 10px;
+    
+}
 
-
+.extra-options p{
+    color: #fff;
+    padding: 10px;
+    word-spacing: 5px;
+    line-height: 24px;
+}
+.extra-options a{
+    text-decoration: none;
+    color: #02f5f5;
+    font-weight: 700;
+}

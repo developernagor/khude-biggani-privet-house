@@ -1,0 +1,221 @@
+.notice-section {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notice-section h2 {
+    margin-bottom: 20px;
+    color: #004085;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.notice-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.notice-cards{
+    display: flex;
+}
+
+.notice-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+}
+.notice-items{
+    width: 50%;
+}
+.notice-items li{
+    width: 100%;
+}
+.notice-item {
+    
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #004085;
+    border-right: 5px solid #004085;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notice-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notice-icon {
+    font-size: 24px;
+    color: #004085;
+    margin-right: 15px;
+}
+
+.notice-content {
+    flex-grow: 1;
+}
+
+.notice-content strong {
+    font-size: 18px;
+    color: #333;
+}
+
+.notice-content p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.notice-content small {
+    color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Notice section styles starts here */
+.notice {
+    background-color: #f8f9fa;
+    padding: ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.notice-heading {
+    color: #3f51b5;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.notice-items{
+    display: flex;
+}
+.notice-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notice-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+    padding-left: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.notice-list li a {
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.notice-list li a:hover {
+    color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notice-date {
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+.card-section {
+    display: flex;
+    
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #34495e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card p, .card ul {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.card ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+
+
+/* Notice section styles ends here */

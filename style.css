@@ -21,6 +21,14 @@ body {
     margin: 0 auto;
     
 }
+
+/* Shared styles */
+.text-primary{
+    color: #3f51b5;
+}
+.text-secondary{
+    color: #555;
+}
 section{
     padding: 50px;
     margin: 0 auto;
@@ -238,7 +246,7 @@ header{
 
 .btn {
     padding: 10px 20px;
-    background-color: #3f51b5;
+    background-color: #28a745;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -262,132 +270,102 @@ header{
 /* Banner section styles ends here */
 
 
-/* Notice section styles starts here */
+
+
+
+/* Notice section styles starts */
 .notice {
-    background-color: #f8f9fa;
-    padding: ;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: #f0f8ff; */
+    
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.notice-heading {
-    color: #343a40;
-    font-size: 28px;
+.notice h2 {
+    margin-bottom: 30px;
+    
+    font-size: 36px;
     font-weight: bold;
-    letter-spacing: 2px;
-    padding-bottom: 20px;
     text-align: center;
 }
-.notice-items{
-    display: flex;
-}
-.notice-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 
-.notice-list li {
-    margin-bottom: 15px;
-    font-size: 18px;
-    position: relative;
-    padding-left: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.notice-list li a {
-    color: #007bff;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.notice-list li a:hover {
-    color: #0056b3;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.notice-date {
-    color: #6c757d;
-    font-size: 14px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-
-
-.card-section {
-    display: flex;
-    
-    gap: 20px;
-    padding: 20px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    border-radius: 15px;
-}
-
-.row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
-    
-}
-
-.card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 20px);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #34495e;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.card p, .card ul {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
-
-.card ul {
+.notice ul {
     list-style-type: none;
     padding-left: 0;
 }
-
-.card ul li {
-    margin-bottom: 8px;
-    padding-left: 15px;
-    position: relative;
+.notice-cards{
+    display: flex;
 }
 
-.card ul li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #3498db;
-    font-weight: bold;
+.notice-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+}
+.notice-items{
+    width: 50%;
+}
+.notice-items h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.notice-items li{
+    width: 100%;
+    list-style: none;
+}
+.notice-item {
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #004085;
+    border-right: 5px solid #004085;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.notice-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
+.notice-icon {
+    font-size: 24px;
+    color: #004085;
+    margin-right: 15px;
+}
 
-/* Notice section styles ends here */
+.notice-content {
+    flex-grow: 1;
+}
+
+.notice-content strong {
+    font-size: 18px;
+    color: #333;
+}
+
+.notice-content p {
+    margin: 5px 0;
+    color: #555;
+}
+.notice-content a{
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.notice-content a:hover{
+    font-weight: 900;
+    color: green;
+}
+
+.notice-content small {
+    color: #888;
+}
+/* Notice 2 ends */
 
 
 /* Counter section styles start here */
@@ -437,7 +415,7 @@ header{
 
 
 /* Admission fees and tution fees styles starts here */
-.fees-section {
+.fees {
     background-color: #f8f9fa;
     
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -446,9 +424,9 @@ header{
 
 
 
-.fees-section h2 {
+.fees h2 {
     text-align: center;
-    color: #343a40;
+    
     margin-bottom: 25px;
     font-size: 28px;
     font-weight: bold;
@@ -466,9 +444,21 @@ header{
 .fees-table h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #007bff;
+    color: #000;
+    text-align: center;
 }
 
+.fees-table-1,
+.fees-table-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+.admission-fees,
+.tution-fees{
+    width: 50%;
+}
 .fees-table table {
     width: 100%;
     border-collapse: collapse;
@@ -479,7 +469,7 @@ header{
 }
 
 .fees-table thead th {
-    background-color: #007bff;
+    background-color: #007bffa6;
     color: #ffffff;
     padding: 12px;
     text-align: left;
@@ -489,7 +479,7 @@ header{
 
 .fees-table tbody td {
     padding: 12px;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
     font-size: 16px;
 }
 
@@ -555,37 +545,54 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
     text-align: center;
 }
 
-.footer-links ul li,
+
 .footer-social ul li {
-    /* margin-bottom: 10px; */
+    
+    background-color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 50%;
+    
+}
+.social-icon{
+    color: #28a745;
+    font-size: 12px;
+}
+.footer-social ul li:hover {
+    
+    background-color: #28a745;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 50%;
+    
+}
+.footer-social ul li:hover > a {
+    color: #fff;
 }
 
-.footer-links a,
-.footer-social a {
+.footer-links a {
     color: #ffffff;
     text-decoration: none;
     font-size: 12px;
     transition: color 0.3s;
 }
+
 .footer-contact p{
     font-size: 12px;
     line-height: 25px;
 }
 .footer-social ul{}
 
-.footer-links a:hover,
-.footer-social a:hover {
+.footer-links a:hover {
     color: #ffeb3b;
 }
 
-.social-icon {
-    font-size: 20px;
-}
+
 
 .footer-bottom {
     text-align: center;
